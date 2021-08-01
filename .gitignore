@@ -102,6 +102,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+TDA_env
 .env
 .venv
 env/
@@ -127,3 +128,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Private Data
+credentials.json
+authToken.pickle

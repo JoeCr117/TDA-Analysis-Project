@@ -1,0 +1,17 @@
+Set up virtual environment:
+1) Create new project file, open console in that file and run python -m venv {PROJECT_NAME_env}
+2) Create a sub project file that will hold your python scrypts
+3) source ./{PROJECT_NAME_env}/Scripts/activate
+        -> To activate the environment
+4) pip install --upgrade pip
+    ignore errors
+5) pip install -U pylint
+6) pip install --upgrade autopep8
+
+If using notebooks
+7) pip install -U ipykernel
+
+Check in terminal:
+        which python
+        which pip
+        pip list
