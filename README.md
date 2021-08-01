@@ -1,2 +1,4 @@
-# Private-TDA-Project
-My private TDA project
+# Private TDA Project
+My private(for now!) TDA project
+
+The objective with this project is to analyse and
