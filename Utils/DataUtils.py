@@ -1,14 +1,10 @@
-# %%
-# Imports
-import pandas as pd
-import json
+# %% Imports
+from pandas import DataFrame
 from pickle import load, dump
 
-# %%
-# Global Variables
+# %% Global Variables
 
-# %%
-# Functions
+# %% Functions
 
 
 def DSave(Obj: 'object', Path: 'str', Name: 'str') -> 'None':
@@ -21,13 +17,11 @@ def DLoad(Path: 'str', Name: 'str') -> 'object':
         return load(f)
 
 
-def JsonToOptionChainDF(RawJson: 'json') -> 'pd.DataFrame':
-    frame = pd.json_normalize(RawJson)
-    return frame
-# %%
-# Classes
+def BeautifyChain(Chain: 'dict') -> 'DataFrame':
+    return DataFrame.from_dict(Chain).rename(columns=lambda x: x[:10])
+# %% Classes
 
 
-# %%
-# Script
-# %%
+# %% Script
+
+# %% Tests
